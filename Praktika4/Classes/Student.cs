@@ -13,6 +13,7 @@ namespace Praktika4.Classes
         public string Surname = "";
         public bool Scholarship = false;
         public int Course = 4;
+        public string ImagePath = "/Images/ic_user.png";
         public Student(string FirstName, string LastName, string Surname)
         {
             this.FirstName = FirstName;
@@ -27,6 +28,11 @@ namespace Praktika4.Classes
             : this(FirstName,LastName, Surname, Scholarship)
         {
             this.Course = Course;
+        }
+        public Student(string FirstName, string Lastname, string Surname, string ImagePath)
+            : this(FirstName, Lastname, Surname)
+        {
+            this.ImagePath = ImagePath;
         }
         public string GetFIO()
         {

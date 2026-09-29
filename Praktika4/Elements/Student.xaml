@@ -11,8 +11,9 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Image Height="30" VerticalAlignment="Top" Margin="10,10,0,0" HorizontalAlignment="Left" Width="30" 
+        <Image x:Name="img_stu" Height="30" VerticalAlignment="Top" Margin="10,10,0,0" HorizontalAlignment="Left" Width="30" 
                Stretch="UniformToFill" Source="/Praktika4;component/Images/ic_user.png"/>
         <Label x:Name="tb_fio" Content="Фамииля Имя Отчество" VerticalContentAlignment="Center" 
                Margin="9.4,10,10.2,10" Grid.Column="1" Foreground="White" FontSize="14"/>
@@ -20,6 +21,8 @@
                Margin="9.8,10" Grid.Column="2" Foreground="White" FontSize="14"/>
         <Label x:Name="tb_course" Content="Курс: 4" VerticalContentAlignment="Center" 
                Margin="9.2,10,9.6,10" Grid.Column="3" Foreground="White" FontSize="14"/>
+        <Button Click="izmena" Content="Изменить" VerticalContentAlignment="Center" 
+               Margin="9.2,10,9.6,10" Background="white" Grid.Column="4" FontSize="14" />
         <Grid.Effect>
             <DropShadowEffect Color="black" Direction="315" Opacity="0.7" RenderingBias="Performance" BlurRadius="5"/>
         </Grid.Effect>
