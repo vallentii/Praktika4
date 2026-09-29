@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Студенты" Height="450" Width="800" MinHeight="450" MinWidth="800" FontFamily="Arial Narrow">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="search" Grid.Row="0" Margin="10" Height="30" FontSize="14" VerticalContentAlignment="Center" TextChanged="Search_Students"/>
         <ScrollViewer Grid.Row="1" ScrollChanged="ScrollViewer_ScrollChanged">
             <StackPanel Margin="10" x:Name="parent">
                 
