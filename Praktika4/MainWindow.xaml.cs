@@ -47,5 +47,15 @@ namespace Praktika4
                 CreateStudent(Step, Count);
             }
         }
+        private void Search_Students(object sender, TextChangedEventArgs e)
+        {
+            parent.Children.Clear();
+            string f = search.Text.Trim().ToLower();
+            foreach(var student in AllStudent)
+            {
+                if(student.GetFIO().ToLower().Contains(f))
+                parent.Children.Add(new Elements.Student(student));
+            }
+        }
     }
 }
